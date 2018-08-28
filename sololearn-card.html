@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sololearn card</title>
+         <style>
+           html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: white;
+  overflow: hidden;
+}
+
+.card-container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 500px;
+  height: 500px;
+}
+.card-container .card {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  overflow: hidden;
+  background: black;
+  border-radius: 10px;
+  box-shadow: -2px 2px 0px 0px #202020, -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+  transform: translate(0px, 0px) rotateX(30deg) rotateZ(-20deg);
+  z-index: 2;
+  transition: all 1s;
+}
+
+.card-container .card h1 {
+  color: cyan;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+.card-container .card h1:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.card-container .card h3 {
+  color: cyan;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.card-container .card h3:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-container .card .circle {
+  position: absolute;
+  margin: auto;
+  top: 10%;
+  bottom: 0;
+  right: -50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: grey;
+  z-index: -2;
+}
+.card-container .card .circle:nth-of-type(2) {
+  width: 100px;
+  height: 100px;
+  top: 90%;
+  right: -20%;
+  z-index: -1;
+  background: darkgrey;
+}
+@media only screen and (max-width: 780px) {
+  .card-container .card {
+    width: 250px;
+    height: 150px;
+    transition: none;
+  }
+
+  .card-container .card h1 {
+    font-size: 18px;
+  }
+  .card-container .card h1:nth-of-type(2) {
+    font-size: 16px;
+  }
+  .card-container .card h3 {
+    font-size: 14px;
+  }
+  .card-container .card h3:nth-of-type(2) {
+    font-size: 12px;
+  }
+  .card-container .card .circle {
+    right: -70%;
+  }
+}
+                 
+         </style>
+    </head>
+    <body>
+        <div class="card-container">
+  <div class="card">
+    <h1><i aria-hidden="true"></i>Sololearn<img src="https://cdn-images-1.medium.com/max/1200/1*QNimSWsBQxta_xt3XksQaw.png" width="25" height="25"></h1>
+    
+    <h1>2019 236 777 8997</h1>
+    
+    <H3><i>CREATER</i></h3>
+    <h3>SAKSHAM MAXWELL</h3>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</div>
+    </body>
+</html>
